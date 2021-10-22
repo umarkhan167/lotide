@@ -7,6 +7,15 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+const head = function(array) {
+    return array[0]
+}
+
 // TEST CODE
-assertEqual("LHL", "LHL");
-assertEqual(4, 64);
+assertEqual(head([4,6,7]), 5);
+assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
+
+console.log(head([5,6,7]));
+
+//assertEqual("LHL", "LHL");
+//assertEqual(4, 64);
