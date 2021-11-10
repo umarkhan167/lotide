@@ -8,9 +8,8 @@
 // };
 
 const tail = function(array) {
-  array = array.slice(-1).pop();
+  firstElement = array.shift();
   return array;
 };
-
 
 module.exports = tail;
