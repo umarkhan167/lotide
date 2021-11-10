@@ -7,8 +7,4 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// TEST CODE
-assertEqual("LHL", "LHL");
-assertEqual(4, 64);
-
 module.exports = assertEqual

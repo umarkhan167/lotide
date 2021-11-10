@@ -11,11 +11,6 @@ const eqArrays = function(array1, array2) {
   } return true
 }
 
-//TEST RUN
-//console.log(eqArrays([1, 2, 3], [1, 2, 3])) // => true
-//console.log(eqArrays([1, 2, 3], [3, 2, 1])) // => false
-
-
 
 //assertArraysEqual FUNCTION
 
@@ -26,9 +21,6 @@ const assertArraysEqual = function(arr1, arr2) {
     console.log(`Assertion Failed:   ${arr1}   !==  ${arr2}`);
   }
 };
-
-//TEST RUN
-//assertArraysEqual(([1, 2, 3], [1, 2, 3]));
 
 
 
@@ -49,16 +41,4 @@ const middle = function(middleArray) {
 }
 
 
-
-//TEST CODE
-console.log(middle([1, 2, 3])) // => [2]
-console.log(middle([1, 2, 3, 4])) // => [2, 3]
-
-assertArraysEqual(middle([1, 2, 3]), ([]));
-assertArraysEqual(middle([1, 2, 3]), ([3, 2, 1]));
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), ([3, 4]));
-
-assertArraysEqual(eqArrays([1, 2], [2, 2]), false);
-
-console.log(eqArrays([1, 2], [1, 2]));
-console.log(eqArrays([1, 2, 4], [1]));
+module.exports = middle;

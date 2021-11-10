@@ -11,11 +11,6 @@ const eqArrays = function(array1, array2) {
   } return true;
 };
 
-//TEST RUN
-//console.log(eqArrays([1, 2, 3], [1, 2, 3])) // => true
-//console.log(eqArrays([1, 2, 3], [3, 2, 1])) // => false
-
-
 //assertArraysEqual FUNCTION
 
 const assertArraysEqual = function(arr1, arr2) {
@@ -26,5 +21,5 @@ const assertArraysEqual = function(arr1, arr2) {
   }
 };
 
-//TEST RUN
-assertArraysEqual([1, 2, 3], [1, 2, 3]);
+
+module.exports = assertArraysEqual;
