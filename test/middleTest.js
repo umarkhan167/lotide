@@ -1,10 +1,11 @@
 const middle = require('../middle.js');
-const assertArraysEqual = require('../assertArraysEqual.js');
+const assert = require('chai').assert; // Used assertion function from Chai's assertion library, so no need for assertEqual anymore. Works well when paired with Mocha.
 
-//TEST CODE
-console.log(middle([1, 2, 3])) // => [2]
-console.log(middle([1, 2, 3, 4])) // => [2, 3]
-
-assertArraysEqual(middle([1, 2, 3]), ([]));
-assertArraysEqual(middle([1, 2, 3]), ([3, 2, 1]));
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), ([3, 4]));
+describe("#middle", () => { 
+  it("returns [2] for [1, 2, 3]", () => {
+   assert.deepEqual(middle([1, 2, 3]), [2]);
+  });
+  it('returns [2, 3] for [1, 2, 3, 4]', () => {
+    assert.deepEqual(middle([1, 2, 3, 4]), [2, 3])
+  });
+});
