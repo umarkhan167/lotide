@@ -40,7 +40,6 @@ const eqObjects = function(object1, object2) {
   }
   //Now loop through the value for each key
   for (let key of key1) {
-    //compare the values throughout each objects' keys and if any of them aren't the same, return false
     if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {
       if (!eqArrays(object1[key], object2[key])) {
         return false
@@ -63,8 +62,8 @@ const abc = { a: "1", b: "2", c: '3' };
 assertEqual(eqObjects(ab, abc), false); // => false
 
 
-const cd = { c: "1", d: ["2", 3], e: 1 };
-const dc = { d: ["2", 3], c: "1", e: 2 };
+const cd = { c: "1", d: ["2", 3] };
+const dc = { d: ["2", 3], c: "1"};
 assertEqual(eqObjects(cd, dc), true); // => true
 
 const cd2 = { c: "1", d: ["2", 3, 4] };
