@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@umarkhan167/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Umar Khan's lotide project",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/umarkhan167/lotide.git"
   },
-  "author": "",
+  "author": "Umar Khan",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/umarkhan167/lotide/issues"
