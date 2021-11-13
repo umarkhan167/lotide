@@ -17,26 +17,6 @@ const map = require('./map');
 const takeUntil = require('./takeUntil');
 const without = require('./without');
 
-
-const head = head;
-const tail =   tail;
-const middle = middle;
-const assertArraysEqual = assertArraysEqual;
-const assertEqual = assertEqual;
-const assertObjectsEqual = assertObjectsEqual;
-const countLetters = countLetters;
-const countOnly = countOnly;
-const eqArrays = eqArrays;
-const eqObjects = eqObjects;
-const findKey = findKey;
-const findKeyByValue = findKeyByValue;
-const flatten = flatten;
-const letterPositions = letterPositions;
-const map = map;
-const takeUntil = takeUntil;
-const without = withou;
-
-
 module.exports = {
   head,
   tail,

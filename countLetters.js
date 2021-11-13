@@ -1,14 +1,3 @@
-//ASSERT EQUAL FUNCTION
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`Assertion Passed:   ${actual}   ===  ${expected}`);
-  } else {
-    console.log(`Assertion Failed:   ${actual}   !==  ${expected}`);
-  }
-};
-
-
-
 // count letters FUNCITON
 
 const countLetters = function(sentence) {
@@ -26,6 +15,4 @@ const countLetters = function(sentence) {
   return finalCount
 }
 
-const result = countLetters('Lighthouse Labs');
-
-console.log(assertEqual(result['L'], 2));
+module.exports = countLetters;

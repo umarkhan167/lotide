@@ -8,6 +8,9 @@ A mini clone of the [Lodash](https://lodash.com) library.
 
 This project was created and published by me as part of my learnings at Lighthouse Labs. 
 
+**NPM Package Link**
+https://www.npmjs.com/package/@umarkhan167/lotide
+
 ## Usage
 
 **Install it:**
