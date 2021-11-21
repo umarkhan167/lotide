@@ -7,7 +7,6 @@ const without = function(source, itemsToRemove) {
         source.splice(x, 1)
       }
     }
-    
   }
   return source;
 }
